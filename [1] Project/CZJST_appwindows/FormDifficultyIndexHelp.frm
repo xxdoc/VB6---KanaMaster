@@ -68,7 +68,7 @@ Begin VB.Form FormDifficultyIndexHelp
       EndProperty
       Height          =   645
       Left            =   16275
-      MouseIcon       =   "FormDifficultyIndexHelp.frx":2B72
+      MouseIcon       =   "FormDifficultyIndexHelp.frx":2B5C
       MousePointer    =   99  'Custom
       TabIndex        =   1
       Top             =   210

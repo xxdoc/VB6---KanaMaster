@@ -851,7 +851,7 @@ Attribute VB_Exposed = False
 '
 '  Powered by Sam Toki
 '  Version: v0.10 Beta Version MuiltLang
-'  Date:    2020/04/30 (Thu.)
+'  Date:    2020/08/22 (Sat.)
 '  History: First version v0.10 Beta was built on 2020/03/18.
 '
 '  WARNING: Commercial use of this computer software is strictly prohibited.
@@ -1059,12 +1059,12 @@ Public answer
         setkanaswitch = Array("!!", True, True, True, True, True, True, True, True, True, True, False)
 
         setgamemode = 1
-        setrepeatedtimes = 2
-        setspecifiedtime = 5
+        setrepeatedtimes = 1
+        setspecifiedtime = 3
 
         setnormaldifficulty = 20
         setincreasedifficultygraduallyswitch = True
-        setinitialdifficulty = 50
+        setinitialdifficulty = 30
         setreachnormaldifficultyat = 20
         setinterval = 10
         setmistakeallowedamount = 3
@@ -1361,31 +1361,31 @@ Public answer
 
             'Difficulty index calculation Part 1...
             For forloop1 = 1 To 5
-                If setkanaswitch(forloop1) = True Then gamedifficultyindex = gamedifficultyindex + 15
+                If setkanaswitch(forloop1) = True Then gamedifficultyindex = gamedifficultyindex + 16
             Next
             For forloop1 = 6 To 10
-                If setkanaswitch(forloop1) = True Then gamedifficultyindex = gamedifficultyindex + 25
+                If setkanaswitch(forloop1) = True Then gamedifficultyindex = gamedifficultyindex + 20
             Next
-            If setkanaswitch(11) = True Then gamedifficultyindex = gamedifficultyindex + 50
+            If setkanaswitch(11) = True Then gamedifficultyindex = gamedifficultyindex + 20
 
             'Difficulty index calculaton Part 2...
             Select Case setgamemode
                 Case 1
-                    gamedifficultyindex = gamedifficultyindex + 150 ^ ((setrepeatedtimes - 1) / 9)
+                    gamedifficultyindex = gamedifficultyindex + setrepeatedtimes * 40
                 Case 2
-                    gamedifficultyindex = gamedifficultyindex + 150 ^ ((setspecifiedtime - 1) / 29)
+                    gamedifficultyindex = gamedifficultyindex + setspecifiedtime * 10
             End Select
 
             'Difficulty index calculaton Part 3...
-            gamedifficultyindex = gamedifficultyindex + 300 ^ ((50 - setnormaldifficulty) / 48)
+            gamedifficultyindex = gamedifficultyindex + 300 ^ ((50 - setnormaldifficulty) / 45)
             Select Case setincreasedifficultygraduallyswitch
                 Case True
-                    gamedifficultyindex = gamedifficultyindex + 60 ^ (1 - (setreachnormaldifficultyat / 100) * ((setinitialdifficulty - setnormaldifficulty) / 48))
-                    gamedifficultyindex = gamedifficultyindex + 90 ^ (1 - (setreachnormaldifficultyat / 100) * ((setinitialdifficulty - setnormaldifficulty) / 48))
+                    gamedifficultyindex = gamedifficultyindex + 60 ^ (1 - (setreachnormaldifficultyat / 100) * ((setinitialdifficulty - setnormaldifficulty) / 45))
+                    gamedifficultyindex = gamedifficultyindex + 90 ^ (1 - (setreachnormaldifficultyat / 100) * ((setinitialdifficulty - setnormaldifficulty) / 45))
                 Case False
                     gamedifficultyindex = gamedifficultyindex + 150
             End Select
-            gamedifficultyindex = gamedifficultyindex + 50 ^ ((30 - setinterval) / 29)
+            gamedifficultyindex = gamedifficultyindex + 50 ^ ((20 - setinterval) / 19)
             gamedifficultyindex = gamedifficultyindex + 100 ^ (1 - setmistakeallowedamount / 10)
 
             'Apply calculation result...

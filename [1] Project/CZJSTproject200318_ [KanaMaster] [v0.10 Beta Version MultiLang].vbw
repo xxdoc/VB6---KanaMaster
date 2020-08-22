@@ -1,6 +1,6 @@
-FormMainWindow = 343, 179, 1107, 656, C, 0, 0, 764, 955, C
+FormMainWindow = 772, 0, 1544, 955, C, 0, 0, 764, 955, C
 FormGameReport = 0, 0, 764, 955, C, 294, 194, 1058, 672, C
 FormAbout = 320, 224, 1408, 871, C, 156, 91, 1244, 738, C
 FormSettings = 764, 0, 1528, 955, C, 0, 0, 466, 955, C
 FormWelcome = 400, 280, 1488, 927, C, 320, 224, 1408, 871, C
-FormDifficultyIndexHelp = 240, 168, 1328, 815, C, 0, 0, 764, 955, C
+FormDifficultyIndexHelp = 240, 168, 1328, 815, C, 0, 0, 772, 955, C

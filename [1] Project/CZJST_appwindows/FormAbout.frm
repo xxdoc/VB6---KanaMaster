@@ -364,7 +364,7 @@ Begin VB.Form FormAbout
          EndProperty
          Height          =   420
          Left            =   5330
-         MouseIcon       =   "FormAbout.frx":2078E
+         MouseIcon       =   "FormAbout.frx":17065
          MousePointer    =   99  'Custom
          TabIndex        =   19
          Top             =   4480
@@ -383,7 +383,7 @@ Begin VB.Form FormAbout
          EndProperty
          Height          =   420
          Left            =   5330
-         MouseIcon       =   "FormAbout.frx":208E0
+         MouseIcon       =   "FormAbout.frx":171B7
          MousePointer    =   99  'Custom
          TabIndex        =   7
          Top             =   1000
@@ -451,7 +451,7 @@ Begin VB.Form FormAbout
          Locked          =   -1  'True
          MousePointer    =   3  'I-Beam
          TabIndex        =   13
-         Text            =   "Thu, Apr 30, 2020"
+         Text            =   "Sat, Aug 22, 2020"
          Top             =   2600
          Width           =   3525
       End
@@ -547,7 +547,7 @@ Begin VB.Form FormAbout
          Appearance      =   0  'Flat
          Height          =   480
          Left            =   5310
-         Picture         =   "FormAbout.frx":20A32
+         Picture         =   "FormAbout.frx":17309
          Top             =   420
          Width           =   480
       End

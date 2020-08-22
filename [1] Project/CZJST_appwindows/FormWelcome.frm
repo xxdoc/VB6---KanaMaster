@@ -38,7 +38,7 @@ Begin VB.Form FormWelcome
          Name            =   "MS UI Gothic"
          Size            =   12
          Charset         =   0
-         Weight          =   700
+         Weight          =   400
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
@@ -46,6 +46,8 @@ Begin VB.Form FormWelcome
       ForeColor       =   &H00000000&
       Height          =   435
       Left            =   11970
+      MouseIcon       =   "FormWelcome.frx":2524
+      MousePointer    =   99  'Custom
       TabIndex        =   5
       Top             =   1050
       Width           =   3480
@@ -59,7 +61,7 @@ Begin VB.Form FormWelcome
          Name            =   "PMingLiU"
          Size            =   12
          Charset         =   0
-         Weight          =   700
+         Weight          =   400
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
@@ -67,6 +69,8 @@ Begin VB.Form FormWelcome
       ForeColor       =   &H00000000&
       Height          =   435
       Left            =   8085
+      MouseIcon       =   "FormWelcome.frx":2676
+      MousePointer    =   99  'Custom
       TabIndex        =   4
       Top             =   1050
       Width           =   3480
@@ -80,7 +84,7 @@ Begin VB.Form FormWelcome
          Name            =   "ËÎÌו"
          Size            =   12
          Charset         =   0
-         Weight          =   700
+         Weight          =   400
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
@@ -88,6 +92,8 @@ Begin VB.Form FormWelcome
       ForeColor       =   &H00000000&
       Height          =   435
       Left            =   4200
+      MouseIcon       =   "FormWelcome.frx":27C8
+      MousePointer    =   99  'Custom
       TabIndex        =   3
       Top             =   1050
       Width           =   3480
@@ -100,7 +106,7 @@ Begin VB.Form FormWelcome
          Name            =   "MS Sans Serif"
          Size            =   12
          Charset         =   0
-         Weight          =   700
+         Weight          =   400
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
@@ -108,6 +114,8 @@ Begin VB.Form FormWelcome
       ForeColor       =   &H00000000&
       Height          =   435
       Left            =   315
+      MouseIcon       =   "FormWelcome.frx":291A
+      MousePointer    =   99  'Custom
       TabIndex        =   2
       Top             =   1050
       Value           =   -1  'True
@@ -129,11 +137,11 @@ Begin VB.Form FormWelcome
       Height          =   8550
       Left            =   315
       Locked          =   -1  'True
-      MouseIcon       =   "FormWelcome.frx":2524
+      MouseIcon       =   "FormWelcome.frx":2A6C
       MousePointer    =   99  'Custom
       MultiLine       =   -1  'True
       TabIndex        =   6
-      Text            =   "FormWelcome.frx":2676
+      Text            =   "FormWelcome.frx":2BBE
       Top             =   1785
       Width           =   17340
    End
@@ -152,7 +160,7 @@ Begin VB.Form FormWelcome
       EndProperty
       Height          =   645
       Left            =   16275
-      MouseIcon       =   "FormWelcome.frx":2991
+      MouseIcon       =   "FormWelcome.frx":2ED9
       MousePointer    =   99  'Custom
       TabIndex        =   1
       Top             =   210

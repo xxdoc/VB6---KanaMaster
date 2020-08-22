@@ -159,7 +159,7 @@ Begin VB.Form FormSettings
    Begin VB.Frame FrameKanaIncluded 
       Appearance      =   0  'Flat
       BackColor       =   &H00D0D0D0&
-      Caption         =   "Kana Included  (250 points of Difficulty Index)"
+      Caption         =   "Kana Included  (200 points of Difficulty Index)"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
          Size            =   12
@@ -878,7 +878,7 @@ Begin VB.Form FormSettings
    Begin VB.Frame FrameDifficulty 
       Appearance      =   0  'Flat
       BackColor       =   &H00D0D0D0&
-      Caption         =   "Difficulty  (500 points of Difficulty Index)"
+      Caption         =   "Difficulty  (600 points of Difficulty Index)"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
          Size            =   12
@@ -921,9 +921,9 @@ Begin VB.Form FormSettings
       End
       Begin VB.HScrollBar HScrollDifficultyInterval 
          Height          =   330
-         LargeChange     =   5
+         LargeChange     =   2
          Left            =   4935
-         Max             =   30
+         Max             =   20
          Min             =   1
          MouseIcon       =   "FormSettings.frx":44D4
          MousePointer    =   99  'Custom
@@ -949,12 +949,12 @@ Begin VB.Form FormSettings
          LargeChange     =   5
          Left            =   4935
          Max             =   50
-         Min             =   2
+         Min             =   5
          MouseIcon       =   "FormSettings.frx":4778
          MousePointer    =   99  'Custom
          TabIndex        =   46
          Top             =   1320
-         Value           =   50
+         Value           =   30
          Width           =   3375
       End
       Begin VB.HScrollBar HScrollDifficultyNormalDifficulty 
@@ -962,7 +962,7 @@ Begin VB.Form FormSettings
          LargeChange     =   5
          Left            =   4935
          Max             =   50
-         Min             =   2
+         Min             =   5
          MouseIcon       =   "FormSettings.frx":48CA
          MousePointer    =   99  'Custom
          TabIndex        =   42
@@ -1213,7 +1213,7 @@ Begin VB.Form FormSettings
    Begin VB.Frame FrameGameMode 
       Appearance      =   0  'Flat
       BackColor       =   &H00D0D0D0&
-      Caption         =   "Game Mode  (250 points of Difficulty Index)"
+      Caption         =   "Game Mode  (200 points of Difficulty Index)"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
          Size            =   12
@@ -1260,25 +1260,25 @@ Begin VB.Form FormSettings
          Height          =   330
          LargeChange     =   5
          Left            =   4935
-         Max             =   30
+         Max             =   20
          Min             =   1
          MouseIcon       =   "FormSettings.frx":50B6
          MousePointer    =   99  'Custom
          TabIndex        =   38
          Top             =   1750
-         Value           =   5
+         Value           =   3
          Width           =   3375
       End
       Begin VB.HScrollBar HScrollGameModeRepeatedTimes 
          Height          =   330
          Left            =   4935
-         Max             =   10
+         Max             =   5
          Min             =   1
          MouseIcon       =   "FormSettings.frx":5208
          MousePointer    =   99  'Custom
          TabIndex        =   35
          Top             =   910
-         Value           =   2
+         Value           =   1
          Width           =   3375
       End
       Begin VB.Label LabelGameModeSpecifiedTime 
