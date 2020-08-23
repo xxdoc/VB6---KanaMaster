@@ -5,7 +5,7 @@ Begin VB.Form FormMainWindow
    AutoRedraw      =   -1  'True
    BackColor       =   &H00D0D0D0&
    BorderStyle     =   1  'Fixed Single
-   Caption         =   "KanaMaster　v0.10　by Sam Toki"
+   Caption         =   "KanaMaster　v0.20　by Sam Toki"
    ClientHeight    =   11670
    ClientLeft      =   45
    ClientTop       =   750
@@ -850,8 +850,8 @@ Attribute VB_Exposed = False
 '  KanaMaster
 '
 '  Powered by Sam Toki
-'  Version: v0.10 Beta Version MuiltLang
-'  Date:    2020/08/22 (Sat.)
+'  Version: v0.20 Beta Version MuiltLang
+'  Date:    2020/08/23 (Sun.)
 '  History: First version v0.10 Beta was built on 2020/03/18.
 '
 '  WARNING: Commercial use of this computer software is strictly prohibited.
@@ -1172,25 +1172,25 @@ Public answer
     End Sub
 
     Public Sub MenuGameChooseOption1_Click()
+        TextboxInput.SetFocus
         chosenanswer = 1
         If gamestatus = 1 Then Call GameRespondent
-        'TextboxInput.SetFocus
     End Sub
     Public Sub CmdOption1_Click()
         Call MenuGameChooseOption1_Click
     End Sub
     Public Sub MenuGameChooseOption2_Click()
+        TextboxInput.SetFocus
         chosenanswer = 2
         If gamestatus = 1 Then Call GameRespondent
-        'TextboxInput.SetFocus
     End Sub
     Public Sub CmdOption2_Click()
         Call MenuGameChooseOption2_Click
     End Sub
     Public Sub MenuGameChooseOption3_Click()
+        TextboxInput.SetFocus
         chosenanswer = 3
         If gamestatus = 1 Then Call GameRespondent
-        'TextboxInput.SetFocus
     End Sub
     Public Sub CmdOption3_Click()
         Call MenuGameChooseOption3_Click
@@ -1584,7 +1584,7 @@ TimerProgressbarAnimation_Skip6_:
 
     Public Sub TimerSpinningSakuraAnimation_Timer()
         If (gamestatus = 1 Or gamestatus = 2 Or gamestatus = 3) Then
-            spinningsakuratargetspeed = (70 - gamecurrentdifficulty) / 68 * 10
+            spinningsakuratargetspeed = (60 - gamecurrentdifficulty) / 60 * 6
         Else
             spinningsakuratargetspeed = 0
         End If
@@ -1633,7 +1633,7 @@ TimerProgressbarAnimation_Skip6_:
         If spinningsakuracurrentspeed < spinningsakuratargetspeed Then spinningsakuracurrentspeed = spinningsakuracurrentspeed + 0.1
         If spinningsakuracurrentspeed > spinningsakuratargetspeed Then spinningsakuracurrentspeed = spinningsakuracurrentspeed - 0.05
         If spinningsakuracurrentspeed < 0 Then spinningsakuracurrentspeed = 0
-        If spinningsakuracurrentspeed > 10 Then spinningsakuracurrentspeed = 10
+        If spinningsakuracurrentspeed > 6 Then spinningsakuracurrentspeed = 6
     End Sub
 
 '  ---------------------------------------------------------------------------------------------------------------------
@@ -1661,6 +1661,9 @@ TimerProgressbarAnimation_Skip6_:
                 MenuSettings.Enabled = False: MenuAbout.Enabled = False
                 CmdStartPauseResume.Enabled = False: CmdStartPauseResume.Caption = "READY": CmdStop.Enabled = True
                 CmdOption1.Enabled = False: CmdOption2.Enabled = False: CmdOption3.Enabled = False: CmdOption1.Caption = "?": CmdOption2.Caption = "?": CmdOption3.Caption = "?"
+                'Close other windows...
+                Call FormSettings.CmdClose_Click
+                Call FormAbout.CmdClose_Click
             Case 1
                 LabelStatusbar.Caption = ""
                 MenuGameStartPauseResume.Caption = "Pause": MenuGameStartPauseResume.Enabled = True: MenuGameStop.Enabled = True

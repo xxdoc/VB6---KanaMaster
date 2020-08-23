@@ -2,8 +2,8 @@
 
 ## Downloads / 下载 / ダウンロード / 다운로드
 
-[KanaMaster v0.10.exe](https://raw.githubusercontent.com/SamToki/VB6---KanaMaster/master/%5B2%5D%20EXE/KanaMaster%20v0.10.exe)<br>
-[假名征服者 v0.10 简体中文公测版.exe](https://raw.githubusercontent.com/SamToki/VB6---KanaMaster/master/%5B2%5D%20EXE/%E5%81%87%E5%90%8D%E5%BE%81%E6%9C%8D%E8%80%85%20v0.10%20%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E5%85%AC%E6%B5%8B%E7%89%88.exe)
+[KanaMaster v0.20.exe](https://raw.githubusercontent.com/SamToki/VB6---KanaMaster/master/%5B2%5D%20EXE/KanaMaster%20v0.20.exe)<br>
+[假名征服者 v0.20 简体中文公测版.exe](https://raw.githubusercontent.com/SamToki/VB6---KanaMaster/master/%5B2%5D%20EXE/%E5%81%87%E5%90%8D%E5%BE%81%E6%9C%8D%E8%80%85%20v0.20%20%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E5%85%AC%E6%B5%8B%E7%89%88.exe)
 
 ## Screenshots / 屏幕截图 / スクリーンショット / 스크린샷
 

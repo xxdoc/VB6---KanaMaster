@@ -451,7 +451,7 @@ Begin VB.Form FormAbout
          Locked          =   -1  'True
          MousePointer    =   3  'I-Beam
          TabIndex        =   13
-         Text            =   "Sat, Aug 22, 2020"
+         Text            =   "Sun, Aug 23, 2020"
          Top             =   2600
          Width           =   3525
       End
@@ -517,7 +517,7 @@ Begin VB.Form FormAbout
          Locked          =   -1  'True
          MousePointer    =   3  'I-Beam
          TabIndex        =   6
-         Text            =   "v0.10 Beta Version"
+         Text            =   "v0.20 Beta Version"
          Top             =   1000
          Width           =   3105
       End
