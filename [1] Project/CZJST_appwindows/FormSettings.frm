@@ -851,7 +851,7 @@ Begin VB.Form FormSettings
       Begin VB.CheckBox CheckboxDisplayReduceContrast 
          Appearance      =   0  'Flat
          BackColor       =   &H00D0D0D0&
-         Caption         =   "Reduce contrast"
+         Caption         =   "Reduce contrast (only for kana)"
          ForeColor       =   &H00000000&
          Height          =   435
          Left            =   4410
@@ -864,7 +864,7 @@ Begin VB.Form FormSettings
       Begin VB.CheckBox CheckboxDisplayBlackOnWhite 
          Appearance      =   0  'Flat
          BackColor       =   &H00D0D0D0&
-         Caption         =   "Black on white"
+         Caption         =   "White on black (only for kana)"
          ForeColor       =   &H00000000&
          Height          =   435
          Left            =   210
